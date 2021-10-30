@@ -36,6 +36,19 @@ switch ($controller) {
 		case 'xuli':
 		require_once('./controller/C_xuli.php');
 		break;
+	    case 'template':
+		require_once('./controller/C_template.php');
+		break;
+		case 'xuli_template':
+		require_once('./controller/C_xuli_template.php');
+		break;
+		case 'addtemplate':
+		require_once('./controller/C_addtemplate.php');
+		break;
+		
+		case 'add_template':
+		require_once('./controller/C_add_template.php');
+		break;
 	
 	
 	default:
