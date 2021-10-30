@@ -135,6 +135,40 @@ $query=mysqli_query($this->conn,$sql);
 // bước 4 trả về giá trị boolean
 return $query;
 }
+// hàm lấy dữ liệu kết hợp nhiều bảng
+public function get_limit($table,$condition=array(),$limit){
+	
+	$sql="SELECT *FROM $table ";
+
+
+	if(!empty($condition)){
+        		// nối chuối,cách where
+        		$sql.=" WHERE";
+        		//lưu mảng phải lặp
+        		foreach ($condition as $key => $value) {
+        			$sql.= " $key =  '$value'
+        			 AND ";
+        			
+        		}
+
+        		$sql.=" LIMIT $limit";
+        		$query=mysqli_query($this->conn,$sql);
+        		$result =array();
+
+
+        	if($query){
+        		// lấy giá trọ của 1 dòng
+        		while ($row =mysqli_fetch_assoc($query)) {
+        			$result[]=$row;
+        			
+        		}
+        	}
+        	return $result;
+        	
+
+}
+
+  }
 
 
 }
