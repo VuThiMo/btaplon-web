@@ -46,18 +46,21 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="?controller=trang_chu">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>user management </span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?controller=template">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>manage templates </span></a>
+            </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+           
 
         </ul>
         <!-- End of Sidebar -->
@@ -160,6 +163,7 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Tables User</h1>
+
                     
 
                     <!-- DataTales Example -->
@@ -187,6 +191,7 @@
                                         
                                         <tbody>
                                              <tr>
+                                    
                                     <?php foreach ($account as $key => $value) {?>
                                     <td><?php echo $value ['id'] ?></td>
       
@@ -196,12 +201,15 @@
       <!--- sửa xóa-->
       <td>
         <a href="?controller=xuli_admin&method=edit&id=<?php echo $value['id']?>"><button class="btn btn-success"><i class="fas fa-user-edit"></i></button></a>
+              <a href="?controller=xuli_admin&method=dele&id=<?php echo $value['id']?>"><button class="btn btn-danger"><i class="fas fa-user-times"></i></button></a>
+        <!-- 
       <button class="btn btn-danger" data-toggle="modal" data-target="#modalDelete"><i class="fas fa-user-times"></i></button>
       </i></button></td>
-<!-- bootstrap --->                                  
+
+                             
 <section class="row">
     <section class="col-md-3" >
-      
+     
       <section class="modal fade" id="modalDelete">
         <section class="modal-dialog"  >
           <section class="modal-content" >
@@ -215,13 +223,16 @@
             <section class="modal-footer">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
               
-              <a href="?controller=xuli_admin&method=del&id=<?php echo $value['id'] ?>"><button type="button" class="btn btn-success">OK</button></a>
+            <a href="?controller=xuli_admin&method=dele&id=<//?php echo $value['id']?>"><button class="btn btn-success">OK</button></a>
             </section>
           </section>
         </section>
       </section>
+    
     </section>
   </section>
+-->
+ 
   <!-- end xóa --->
 
 
@@ -230,6 +241,7 @@
 
   </tbody>
    <?php  } ?>
+
   </table>
 </main>
 
