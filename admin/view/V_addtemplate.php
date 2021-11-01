@@ -33,7 +33,7 @@
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Update an template</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Create an template</h1>
                             </div>
         <form class="user" action="?controller=add_template" method="post">
                                 
@@ -49,6 +49,9 @@
                         <button class="btn btn-primary btn-user btn-block" type="submit" name="btn_add">
                             Register template
                         </button>
+                         <div class="text-center">
+                                        <a class="small" href="?controller=login">login</a>
+                                    </div>
                         </form>
                           </div>
                 </div>

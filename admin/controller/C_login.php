@@ -35,10 +35,11 @@ if(isset($_POST['btn_login'])){
 		}
 		
 		if ($user[0]['role'] == 'user') {
-			header('location:./view/V_website.php');
+			header('location:?controller=website');
 		}
 		
 	}
+
 	
 	
 }

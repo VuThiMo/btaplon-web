@@ -55,6 +55,9 @@
                         <button class="btn btn-primary btn-user btn-block" type="submit" name="btn_add">
                             Register Account
                         </button>
+                         <div class="text-center">
+                                        <a class="small" href="?controller=login">login</a>
+                                    </div>
                         </form>
                        
                     </div>

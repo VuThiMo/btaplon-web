@@ -49,10 +49,15 @@ switch ($controller) {
 		case 'add_template':
 		require_once('./controller/C_add_template.php');
 		break;
+		case 'website':
+		require_once('./controller/C_website.php');
+		break;
+		
 	
 	
 	default:
-		require_once('./controller/C_trang_chu.php');
+
+		require_once('./view/V_login.php');
 		break;
 }
 

@@ -59,18 +59,19 @@
                                         <div class="form-group">
                     <?php if(isset($error['password'])){ ?>
                         <label style="color:red;"><i class="fas fa-exclamation-triangle"></i><?php echo $error['password'] ?></label>
-                    <?php }?>
+                    <?php }?>          
+                                    
                 </div>
-                                        
-                                        <button  class="btn btn-primary btn-user btn-block" name="btn_login">
+                                       <button  class="btn btn-primary btn-user btn-block" name="btn_login">
                                             Login
-                                        </button>
+                                        </button></a>
+                                                       
                                         
                                     </form>
                                    
                                     
                                     <div class="text-center">
-                                        <a class="small" href="?controller=add_account">Create an Account!</a>
+                                        <a class="small" href="?controller=addaccount">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>

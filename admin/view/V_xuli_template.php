@@ -38,7 +38,7 @@
         <form class="user" action="?controller=xuli_template&method=edit&id=<?php echo $_GET['id'] ?>" method="post">
                                 
                         <div class="form-group">
-                            <input type="text"  placeholder="content" name="content" value="<?php echo $data_template[0]['content'] ?>"  style="width:1000px; height: 500px;">
+                            <input type="text"  placeholder="content" name="content" value="<?php echo $data_template[0]['content'] ?>"  style="width:1000px; height: 1200px;">
                         </div>
                         <div class="row mt-1">
                     <?php if (isset($error['content'])) {?>
