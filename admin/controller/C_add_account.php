@@ -1,38 +1,19 @@
 <?php
+echo $_POST['btn_add'];
 if(isset($_POST['btn_add'])){
 	$email_phone = $_POST['email_phone'];
 	$password=$_POST['password'];
-	
+	$theme=$_POST['theme'];
+	$website=$_POST['website'];
 
-
-	$id=1;
-	$data_web=$db->get('website',array());
-	foreach ($data_web as $key => $value) {
-		$id +=$value['id'];
-	}
-	// oder_detail
-	
-		$db->insert('website',array(
-			'id'=>$id,
-			'email_phone'=>$value['email_phone']
-		
-		
-			
+		$db->insert('account',array(
+			'email_phone'=>$email_phone,
+			'password'=>$password,
+			'website'=>$website,
+			'idTheme'=>$theme,
+			'role'=>'user'
 		));
-		// code...
-	
-	//oder
-$data_add=$db->get('account',array('id'));
-
- 
-$db->insert('account',array(
-	'id'=>$id,
-	'email_phone'=>$email_phone,
-	'password'=>$password,
-	'role'=>'user'
-
-
-));
+		
 
 
 }
