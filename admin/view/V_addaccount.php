@@ -46,6 +46,16 @@
                             <div class="col-sm-6 mb-3 mb-sm-0">
                                 <input  class="form-control form-control-user" id="exampleInputPassword"
                                     placeholder="Password" name="password">
+                                    <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <input  class="form-control form-control-user"
+                                    placeholder="website" name="website">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-user" 
+                                    placeholder="theme" name="theme">
+                            </div>
+                        </div>
                             </div>
                             <div class="col-sm-6">
                                 <input type="password" class="form-control form-control-user" id="exampleRepeatPassword"
