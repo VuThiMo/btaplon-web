@@ -49,15 +49,16 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="?controller=trang_chu">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>user management </span></a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="?controller=template">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>manage templates </span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?controller=trang_chu">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>user management </span></a>
+            </li>
+            
 
 
             <!-- Divider -->
