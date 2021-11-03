@@ -10,12 +10,27 @@ if (isset($_SESSION['ss_admin_nhanvien'])) {
 
 // code up anh
 if (isset($_POST['submit'])) {
+
+    $uniquesavename=time().uniqid(rand());
     $hinhanhpath = basename($_FILES['upload_file']['name']);
-    $target_dir = "./uploads/";
-    $target_file = $target_dir . $hinhanhpath;
+    $target_dir = "/uploads/";
+    $urlimage = $target_dir . $uniquesavename . $hinhanhpath ;
+    $target_file = '.' . $urlimage ;
+    
 
     if (move_uploaded_file($_FILES['upload_file']['tmp_name'], $target_file)) {
     }
+
+    $contentPost = $_POST["tutorial"];
+
+   $data_feeds= $db->insert('feeds', array(
+        'content' => $contentPost,
+        'urlimage' => $target_file,
+        'idAccount' => $user[0]['id']
+    ));
+    $feeds=$db->get('feeds',array());
+ 
 }
+
 
 require_once('./view/V_website.php');

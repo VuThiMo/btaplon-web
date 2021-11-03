@@ -73,6 +73,7 @@ class database
   	$sql="INSERT INTO $table($fiels) VALUES ($value_str)";
 
   	$query = mysqli_query($this->conn,$sql);
+	 
   	return $query;
   }
 
