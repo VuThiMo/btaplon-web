@@ -14,8 +14,9 @@ if (isset($_POST['submit'])) {
   
 
   $content = $nameImagePath . $imgBlock;
-   
+
   $template = str_replace("###Content", $content, $template);
+  echo $contentPost;
   
 
 }
@@ -27,7 +28,7 @@ $template = str_replace("###Email_phone", $email_phone, $template);
 
 
 echo $template;
-echo $contentPost;
+
 
 
 ?>
