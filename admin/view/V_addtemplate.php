@@ -38,7 +38,7 @@
         <form class="user" action="?controller=add_template" method="post">
                                 
                         <div class="form-group">
-                            <input type="text"  placeholder="content" name="content"   style="width:1000px; height: 500px;">
+                            <textarea type="text"  placeholder="content" name="content"   style="width:1000px; height: 500px;"></textarea>
                         </div>
                         <div class="row mt-1">
                     <?php if (isset($error['content'])) {?>
@@ -49,6 +49,7 @@
                         <button class="btn btn-primary btn-user btn-block" type="submit" name="btn_add">
                             Register template
                         </button>
+                        
                         
                         </form>
                           </div>

@@ -19,6 +19,7 @@ if(isset($_SESSION['ss_admin_nhanvien'])){
     				$error['content']="content không được để trống";
 
     			}
+    			
     			//update database
     			if (!$error) {
     				$db->update('theme',array(

@@ -15,18 +15,12 @@ if(isset($_POST['btn_add'])){
 		));
 		
 
-if ('role'=='admin') {
-			header('location:?controller=login');
-		}
-		
-		if ('role'== 'user') {
-			header('location:?controller=trang_chu');
-		}
+
 		
 }
 
 
-		
+		header('location:?controller=trang_chu');
 	
 
 
